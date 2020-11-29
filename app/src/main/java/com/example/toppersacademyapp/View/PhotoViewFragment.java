@@ -45,15 +45,6 @@ public class PhotoViewFragment extends Fragment {
                 .into(photoView);
     }
 
-    /*public void displayImage(EventModel eventModel){
-        String Url = eventModel.getEventImage();
-        Glide.with(getContext())
-                .load(Url)
-                .fitCenter()
-                .placeholder(R.drawable.ic_baseline_error_24)
-                .into(photoView);
-    }*/
-
     @Override
     public void onDestroy() {
         super.onDestroy();

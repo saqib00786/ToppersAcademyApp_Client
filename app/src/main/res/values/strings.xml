@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Toppers Academy App</string>
+    <string name="app_name">Toppers Academy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculateFee">Calculate Your Fee</string>
+    <string name="app_name_splash">The Toppers Academy</string>
+    <string name="message"><![CDATA[The vision, mission and objectives are the foremost requirement of any educational institution. These are the segments on which the institution is built. We believe that Quality Assurance and Enhancement is a dynamic process. We are, therefore, continually and passionately committed to reach that bar of excellence that we have set for ourselves; while keeping in foresight our national needs and certain limitations of the area we are working in.\nFor Students of the Piplan Tahseel I would say we are here for you, any individual can reach Toppers Academy Piplan for their educational needs and guidance and that message is for each and every student of area regardless of the fact if he/she is enrolled in Toppers Academy Piplan or not.]]></string>
+
 </resources>

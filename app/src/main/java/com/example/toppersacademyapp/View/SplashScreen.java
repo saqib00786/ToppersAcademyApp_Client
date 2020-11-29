@@ -25,13 +25,10 @@ public class SplashScreen extends Fragment {
         ((AppCompatActivity) requireActivity()).getSupportActionBar().hide();
 
         int mSecondDisplay = 1;
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                DashBoard dashBoard = new DashBoard();
-                getActivity().getSupportFragmentManager().beginTransaction().
-                        replace(R.id.fragment_container, dashBoard).commit();
-            }
+        new Handler().postDelayed(() -> {
+            DashBoard dashBoard = new DashBoard();
+            getActivity().getSupportFragmentManager().beginTransaction().
+                    replace(R.id.fragment_container, dashBoard).commit();
         }, mSecondDisplay * 4000);
 
         return view;
