@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/feetopBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/feestructure"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Fee Structure"
+                    android:fontFamily="@font/segoregular"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/feetopBar"
+        android:weightSum="4"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/fee_structure_bg"
+                android:gravity="center_horizontal"
+                >
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/calculateFeeTxt"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/calculateFee"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/segoregular"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calculateFeeTxt"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/leftLayout"
+                    >
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/englishID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/physicsID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physics"
+                        android:layout_below="@id/englishID"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="3dp"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/chemistryID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry"
+                        android:layout_below="@id/physicsID"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="3dp"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/mathID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mathematics"
+                        android:layout_below="@id/chemistryID"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="3dp"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calculateFeeTxt"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/leftLayout"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/psychologyID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Psychology"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/biologyID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biology"
+                        android:layout_below="@id/psychologyID"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="3dp"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/computerID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Sci."
+                        android:layout_below="@id/biologyID"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="3dp"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/programmingID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Programming"
+                        android:layout_below="@id/computerID"
+                        android:textColor="@android:color/white"
+                        android:buttonTint="@android:color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_marginTop="3dp"
+                        />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/background_fee_structure_view"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/std_payment"
+                            android:layout_alignParentStart="true"
+                            />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/totalFeeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:text="Calculated Fee"
+                            android:fontFamily="@font/segoregular"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/totalFeeID"
+                            android:layout_below="@id/totalFeeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:text="Rs. 0"
+                            android:fontFamily="@font/segoregular"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/background_fee_structure_sec"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/std_discount"
+                            android:layout_alignParentStart="true"
+                            />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/discoutTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:text="Discounted Fee"
+                            android:fontFamily="@font/segoregular"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/discountID"
+                            android:layout_below="@id/discoutTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:text="Rs. 0"
+                            android:fontFamily="@font/segoregular"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

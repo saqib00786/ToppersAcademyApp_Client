@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/coursesToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/courses"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Courses"
+                    android:fontFamily="@font/segoregular"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@id/coursesToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="4"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/matric_bg"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/courses"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/metric_icon"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/metricTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="9th,10th"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#5A366D"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/description_metricID"
+                        android:layout_below="@id/metricTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Activity Based Learning"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#5A366D"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:background="@drawable/inter_bg"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#0077b6"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/intermediate_icon"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/interTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="11th,12th"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#023e8a"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/description_interID"
+                        android:layout_below="@id/interTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Practical Based Approach"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#023e8a"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/bachlor_bg"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#eb5e28"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bachlor_icon"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/bachlorTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="B.A/B.Sc"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A83B10"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/description_bachlorID"
+                        android:layout_below="@id/bachlorTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Discussion Based Approach"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#A83B10"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:background="@drawable/master_bg"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#233d4d"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/master_icon"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+
+                    >
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/masterTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="M.A English"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#1A2C38"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/description_masterID"
+                        android:layout_below="@id/masterTxtID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Presentation Based Approach"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#1A2C38"
+                        android:fontFamily="@font/segoregular"
+                        android:textStyle="bold"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/aboutUsToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/aboutus"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="About Us"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoregular"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/aboutUsToolbarID"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/DirectorPic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/director_pic" />
+
+            <TextView
+                android:id="@+id/DirectorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/DirectorPic"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/DirectorPic"
+                android:fontFamily="@font/segoregular"
+                android:text="Prof. Rao Asif Ali"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/messageID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/DirectorPic"
+                android:background="@drawable/message_bg"
+                android:layout_margin="5dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/segoregular"
+                    android:justificationMode="inter_word"
+                    android:text="@string/message"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/messageID"
+                android:layout_margin="20dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sponserId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoregular"
+                    android:text="Sponserd By"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/academyNameId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sponserId"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/segoregular"
+                    android:text="The Toppers Academy Piplan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/academyNameId"
+                    android:src="@drawable/dash_boad_logo" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/versionID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/segoregular"
+                    android:text="Version 1.0 beta"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@id/academyNameId"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/developerInfoID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/versionID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/segoregular"
+                    android:gravity="center"
+                    android:text="Developer: Muhammad Saqib \n (M.Sc IT)\n E-mail: msaqibata321@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
